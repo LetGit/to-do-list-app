@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToDoListHeaderView" customModule="to_do_list_app" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="MFJ-F2-3h1" id="WRN-BA-cSf"/>
+                <outlet property="dateLabel" destination="Aw4-i2-r6w" id="tRz-gj-Szq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw4-i2-r6w">
+                    <rect key="frame" x="40" y="59" width="354" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rVA-Bt-BrO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" red="0.21168097850000001" green="0.24751740689999999" blue="0.51375120880000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MFJ-F2-3h1">
+                    <rect key="frame" x="0.0" y="119" width="414" height="83"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="4qO-lS-nqa"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="ZIK-w3-cQw">
+                        <size key="itemSize" width="50" height="70"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="0.0" maxX="60" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-zZ-EVc" userLabel="라인">
+                    <rect key="frame" x="0.0" y="201" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KQd-t5-nT8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Aw4-i2-r6w" secondAttribute="trailing" constant="20" id="Jds-gH-8nO"/>
+                <constraint firstItem="MFJ-F2-3h1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MX9-zB-bel"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NUE-zZ-EVc" secondAttribute="bottom" id="Msj-MC-Lv9"/>
+                <constraint firstItem="MFJ-F2-3h1" firstAttribute="top" secondItem="Aw4-i2-r6w" secondAttribute="bottom" constant="30" id="QsW-HN-IA6"/>
+                <constraint firstItem="MFJ-F2-3h1" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="RWm-pM-I1z"/>
+                <constraint firstItem="NUE-zZ-EVc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dBm-T6-nII"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NUE-zZ-EVc" secondAttribute="trailing" id="huc-s9-Jbo"/>
+                <constraint firstItem="MFJ-F2-3h1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rLs-IU-2IM"/>
+                <constraint firstItem="Aw4-i2-r6w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="v9i-VX-SAp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>
